@@ -1,0 +1,18 @@
+<h3>Datos del usuario</h3>
+
+<div>
+    <form id='userData' action='/users/newUser' method='POST'>
+            <label class='id'>Nombre</label>
+            <input type='text' name='name' value='<%= user.name %>' placeholder='Nombre' /><br>
+            <label class='name'>Apellidos</label>
+            <input type='text' name='last' value='<%= user.name %>' placeholder='Apellidos' /><br>
+            <label class='email'>Nombre de Usuario</label>
+            <input type='text' name='user' value='<%= user.name %>' placeholder='Nombre de usuario' /><br>
+            <label class='email'>Correo electrónico</label>
+            <input type='email' name='email' value='<%= user.name %>' placeholder='Correo electrónico' /><br>
+            <label class='email'>Contraseña</label>
+            <input type='password' name='pass' value='<%= user.name %>' placeholder='Contraseña' /><br>
+        </div>
+        <input type="submit" value="Guardar">
+    </form>
+</div>

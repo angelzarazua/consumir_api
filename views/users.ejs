@@ -1,0 +1,38 @@
+<h3>Listado de usuarios</h3>
+
+<!-- <div><a href='/users/newUser'>Crear usuario</a></div> -->
+<div>
+    <% if (users) { %>
+    <table style="border: 0; ">
+        <tr style='text-align:left;'>
+            <th class='id'>ID</th>
+            <th class='name'>Usuario</th>
+            <th class='acciones'>Nombre</th>
+            <th class='acciones'>Apellidos</th>
+            <th class='acciones'>Correo</th>
+            <th class='acciones'>Edad</th>
+            <th class='acciones'>Estatura</th>
+            <th class='acciones'>Peso</th>
+
+        </tr>
+        <%  // Se recorren los usuarios
+        for(var i=0; i < users.length; i++) { 
+                var user = users[i]; %>
+        <tr>
+            <td class='id'><%= user.Cliente_ID %></td>
+            <td class='name'><%= user.Nombre_Usuario %></td>
+            <td class=''><%= user.Nombre %></td>
+            <td class=''><%= user.Apellidos %></td>
+            <td class=''><%= user.Correo_Electronico %></td>
+            <td class=''><%= user.Edad %></td>
+            <td class=''><%= user.Estatura %></td>
+            <td class=''><%= user.Peso %></td>
+        </tr>
+
+        <%  }%>
+    </table>
+    <%   } else { %>
+    <div class='linea'>No hay usuarios.</div>
+    <% } %>
+    
+</div>
